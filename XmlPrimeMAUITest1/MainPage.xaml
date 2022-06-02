@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XmlPrimeMAUITest1.ViewModels"
+             x:Class="XmlPrimeMAUITest1.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:XmlPrimeViewModel/>
+    </ContentPage.BindingContext>
+    
+    <VerticalStackLayout Spacing="25" Padding="30">
+
+        <Label 
+                Text="XmlPrime MAUI Test"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+        <!--<Button Text="Test current-dateTime()" Command="{Binding TestCurrentDateTimeValue}"/>
+
+        <Label Text="{Binding XPathCurrentDateTimeTest, Mode=OneWay, FallbackValue=NotTested}"/>
+
+        <Button Text="Test new XdmAtomicValue(DateTime.Now)" Command="{Binding TestXdmAtomicValue}"/>
+
+        <Label Text="{Binding XdmAtomicValueTest, Mode=OneWay, FallbackValue=NotTested}"/>-->
+
+        <Button Text="Test XSLT" Command="{Binding TestCallTemplateTransformationResult}"/>
+
+        <Label Text="{Binding XdmTransformationResult, Mode=OneWay, FallbackValue=NotTested}"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>
